@@ -1,6 +1,6 @@
 {
   "name": "cliful",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Some cli lib.",
   "main": "cliful.js",
   "directories": {

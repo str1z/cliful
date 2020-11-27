@@ -6,9 +6,12 @@ class Arg extends Field {
     super(arg);
   }
   match(arg, errors) {
-    if (arg === undefined && this.required) {
-      errors.push(this.required);
-      return Field.FAILED;
+    if (arg === undefined) {
+      if (this.required) {
+        errors.push(this.required);
+        return Field.FAILED;
+      }
+      return this.value;
     }
     let error = this.validate(arg);
     errors.push(...error);
