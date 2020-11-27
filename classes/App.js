@@ -57,7 +57,7 @@ ${errors
       new Cmd({
         name: "info",
         args: ["info"],
-        description: "To get the nescessary information of this application.",
+        description: "Get the nescessary information.",
         exec: () => {
           this.printInfo();
         },
@@ -68,6 +68,7 @@ ${errors
     this.cmds.push(
       new Cmd({
         name: "help",
+        description: "For help.",
         args: ["help", { type: "string", name: "name", value: false, strict: true }],
         opts: { "all a": false },
         exec: ({ name, all }) => {
