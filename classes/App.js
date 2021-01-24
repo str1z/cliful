@@ -57,7 +57,7 @@ ${errors
       new Cmd({
         name: "info",
         args: ["info"],
-        description: "Get the nescessary information.",
+        description: "Get the necessary information.",
         exec: () => {
           this.printInfo();
         },
